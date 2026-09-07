@@ -17,11 +17,18 @@
     font-weight: 200 900; 
     font-style: normal; 
 }
+@font-face { 
+    font-family: "Quicksand"; 
+    src: url(../assets/fonts/Quicksand-VariableFont_wght.ttf); 
+    font-weight: 200 900; 
+    font-style: normal; 
+}
 
 :root {
     --font-titulo: "Roboto1", sans-serif;
     --font-texto: "Roboto2", sans-serif;
     --font-titulo2: "Montserrat", sans-serif;
+    --font-principal: "Quicksand", sans-serif;
 
 
     --color-violeta-oscuro1: #0d0b2f;
