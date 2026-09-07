@@ -163,9 +163,6 @@ main{
 .card:hover{
     transform: translateY(-10px);
 }
-.prof:hover{
-    transform: translateY(-10px);
-}
 
 /*configuracion de videos*/
 .video{
@@ -197,6 +194,9 @@ main{
     padding: 1rem;
     transition: transform 1s ease;
 }
+.prof:hover{
+    transform: translateY(-10px);
+}
 
 .videos h3{
     text-align: center;
@@ -219,8 +219,6 @@ main{
     margin-block: 1rem;
     font-family: var(--font-titulo2);
 }
-
-
 /* tabla*/
 .tabla table{
     width: auto;
@@ -247,7 +245,3 @@ tr:hover {background-color: var(--color-violeta-claro2);}
     font-size: 1.3rem;
     font-family: var(--font-principal);
 }
-
-
-
-
