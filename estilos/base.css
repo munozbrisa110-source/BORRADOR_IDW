@@ -66,19 +66,21 @@ main {
     flex: 1 1 auto; 
 }
 
-header { 
-    display: flex; 
-    padding: 1.5rem 3rem; 
+header {
+    display: flex;
     justify-content: space-between; 
-    align-items: center; 
-    background-color: var(--color-violeta-oscuro3); 
+    align-items: center;
+    padding: 0.8rem 2rem; 
+    background-color: var(--color-violeta-oscuro3);
 }
 
-.marca { 
-    display: flex; 
-    flex-direction: column; 
+.marca {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;     
+    justify-content: flex-start;
+    gap: 15px;               
 }
-
 .marca h1 { 
     font-size: 3rem; 
     font-family: var(--font-titulo);
@@ -242,4 +244,50 @@ footer {
     color: var(--color-violeta-oscuro3);
     font-weight: bold;
     text-decoration: underline;
+}
+
+
+
+.tabla table {  
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-violeta-claro1); 
+    margin-top: 1rem;
+}
+
+.tabla th {
+    background-color: var(--color-violeta-claro3); /* Encabezado violeta suave */
+    color: var(--color-violeta-oscuro3);           /* Texto violeta oscuro */
+    font-weight: 800;
+    text-align: center;
+    padding: 10px 12px;
+    font-size: 1.1rem;
+}
+
+.tabla td {
+    padding: 1rem;
+    color: var(--color-violeta-oscuro2);
+    border-bottom: 1px dashed var(--color-violeta-oscuro3); 
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+
+.tabla tr:hover {
+    background-color: var(--color-violeta-claro2);
+}
+
+.icono-marca {
+    width: 60px;        
+    height: 60px;        
+    object-fit: contain; 
+    align-self: center;  
+}
+
+.marca {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: flex-start;
+    gap: 15px;           
 }
