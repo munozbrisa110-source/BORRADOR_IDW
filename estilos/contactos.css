@@ -74,11 +74,13 @@
     margin: 0 auto;
     padding-bottom: 40px;
 }
-.tablac table {  
-         width: 100%;
-         border-collapse: collapse;
-         background-color: var(--color-violeta-claro1);
-         margin-top: 1rem; 
+.tablac table p {  
+    background-color: var(--color-violeta-claro1);
+    text-align: center;
+    width: auto;
+    font-style: normal;
+    color:black;
+
 }  
 .tablac table{
     width: auto;
@@ -101,6 +103,8 @@ tr:hover {background-color: var(--color-violeta-claro2);}
 .tablac td{
     padding: 1rem;
     color: var(--color-violeta-oscuro2);
+    text-align: center;
+    font-size: 1rem;
     border-bottom: 1px dashed var(--color-violeta-oscuro3);
     font-size: 1.3rem;
     font-family: var(--font-principal);
