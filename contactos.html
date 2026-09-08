@@ -2,59 +2,64 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>La Mary - Contacto</title>
-    <link rel="stylesheet" href="estilos/basico.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos/contactos.css">
+    <link rel="stylesheet" href="estilos/index.css">
     <link rel="stylesheet" href="estilos/base.css">
-    <link rel="stylesheet" href="estilos/contacto.css">
+    <link rel="stylesheet" href="estilos/basico.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>contactos</title>
+    
+    <title>La Mary - Contacto</title>
+     
 </head>
-<body> 
+<body>
+       
     <header> 
+       
+        
         <div class="marca">
-                <img src="assets/imagen/logo1.png" alt="Logo La Mary" class="icono-marca" width="60"> 
-                <div class="texto-marca">
+            <span class="icono-marca">🐾</span>
+            <div class="texto-marca">
                 <h1>La Mary</h1>
                 <h2>Clínica Veterinaria</h2>
             </div>
         </div>
         <nav class="navegacion">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="institucional.html">Institucional</a></li>
-                <li><a href="contactos.html" class="activo">Contacto</a></li>
+                <li><a href="index.html" id="link-inicio">Inicio</a></li>
+                <li><a href="institucional.html" id="link-institucional">Institucional</a></li>
+                <li><a href="contactos.html" class="activo" id="link-contacto">Contacto</a></li>
             </ul>
         </nav>
+
     </header>
+
     <!-- CONTENIDO PRINCIPAL -->
     <main class="pagina-contacto">
         <p><a href="Pedir_Turnos.html" id="link-pedir-turnos">🐾 Pedir Turnos</a></p>
-          
-                <h1>Contacto</h1>
+        <section class="contenedor-ubi">
+            <article class="texto-mapa">
+                 
                 
+                <h1>Contacto</h1>
                 <h2>Comunicate con nuestro equipo médico y administrativo a través de nuestros canales oficiales:</h2>
                 
                 <div class="datos-contacto">
-                    <h3><img src="assets/imagen/whatsapp_10.png" alt="WhatsApp"> <strong> WhatsApp:</strong> 3454056923
-                    <br> <strong>✉️ Email:</strong> <a href="mailto:veterinarialamary@gob.ar">veterinarialamary@gob.ar</a>
-                    <br> <strong>📍 Dirección:</strong> Gdor. Gral. Balcarce 327, Concordia, Entre Ríos
+                    <h3><img src="assets/imagen/whatsapp_10.png" alt="WhatsApp"> <strong> WhatsApp:</strong> 3454056923</h3>
+                    <h3> <strong>✉️Email:</strong> <a href="mailto:veterinarialamary@gob.ar">veterinarialamary@gob.ar</a></h3>
+                    <h3> <strong>📍 Dirección:</strong> Gdor. Gral. Balcarce 327, Concordia, Entre Ríos</h3>
+                     <div class="imagen-vet">
+                        <img src="assets/imagen/imagen09.jfif" alt="imagen de contacto">
+                     </div>
+                </div>
                 
-                </div>
-                <div>
-                     <img src="assets/imagen/imagen09.jfif" alt="imagen de contacto"> 
-                </div>
-             
-            <article class="mapa">
-                <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851.2291410887108!2d-58.0235525!3d-31.3859962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95ade816b7f57551%3A0x95270adb0f221cf8!2sGdor.%20Gral.%20Balcarce%20327%2C%20E3202%20Concordia%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses!2sar!4v1700000000000!5m2!1ses!2sar" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-            </article>           
+            </article>
 
             <!--TABLA DE HORARIOS DE ATENCIÓN-->
-        <section>
             <article class="tabla">
-                <!-- El título va afuera de la tabla para que no rompa la estructura -->
-                <h2>Horarios de Atención</h2>   
+                <h1>Horarios de Atención</h1>
                 <table>
                     <thead>
                         <tr>
@@ -65,9 +70,9 @@
                     </thead>
                     <tbody>
                         <tr>
-                        <td>Lunes a viernes</td>
-                        <td>08:00 a 12:00</td>
-                        <td>16:00 a 20:00</td>
+                            <td>Lunes a viernes</td>
+                            <td>08:00 a 12:00</td>
+                            <td>16:00 a 20:00</td>
                         </tr>
                         <tr>
                             <td>Sábados</td>
@@ -82,7 +87,7 @@
                     </tbody>
                 </table>
             </article>
-                
+        </section>
     </main>
     <footer>
         <div class="footer-marca">

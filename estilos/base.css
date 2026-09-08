@@ -10,6 +10,7 @@
     font-weight: 200 900; 
     font-style: normal; 
 }
+/*Títulos institucional*/
 @font-face { 
     font-family: "Montserrat"; 
     src: url(../assets/fonts/montserrat-VariableFont_wght.ttf); 
@@ -72,228 +73,182 @@ main {
     flex: 1 1 auto; 
 }
 
-header {
-    display: flex;
+/* ==========================================================================
+   CABECERA Y NAVEGACIÓN OPTIMIZADA
+   ========================================================================== */
+
+header { 
+    display: flex; 
+    padding: 1rem 3rem; 
     justify-content: space-between; 
-    align-items: center;
-    padding: 0.8rem 2rem; 
-    background-color: var(--color-violeta-oscuro3);
+    align-items: center; 
+    background-color: var(--color-violeta-oscuro3); 
+    box-shadow: 0 4px 15px rgba(13, 11, 47, 0.2); 
 }
 
-.marca {
-    display: flex;
-    flex-direction: row;    
-    align-items: center;     
-    justify-content: flex-start;
-    gap: 15px;               
+.marca { 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    gap: 1rem; 
 }
+
+.logo-marca {
+    width: 55px; 
+    height: 55px;
+    object-fit: contain; 
+}
+
+.texto-marca {
+    display: flex;
+    flex-direction: column;
+}
+
 .marca h1 { 
-    font-size: 3rem; 
+    font-size: 2.2rem; 
     font-family: var(--font-titulo);
     color: var(--color-violeta-claro1); 
+    line-height: 1;
 }
 
 .marca h2 { 
-    font-size: 1.2rem; 
-    letter-spacing: 0.2rem; 
-    color: var(--color-violeta-claro1); 
+    font-size: 0.85rem; 
+    letter-spacing: 0.15rem; 
+    color: var(--color-violeta-claro2); 
     text-transform: uppercase;
 }
 
 .navegacion ul { 
     display: flex; 
-    gap: 3rem; 
+    gap: 2.5rem; 
     list-style: none; 
     align-items: center; 
 }
 
 .navegacion ul a { 
     text-decoration: none;
-    font-size: 1.1rem; 
+    font-family: var(--font-titulo2); 
+    font-size: 1rem; 
     letter-spacing: 1px; 
-    font-weight: 500; 
+    font-weight: 600; 
     color: var(--color-violeta-claro1); 
     border-bottom: 3px solid transparent; 
-    transition: all 0.3s ease; 
-    padding: 0.5rem; 
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+    padding: 0.4rem 0.2rem; 
 }
 
 .navegacion ul a:hover, 
 .navegacion ul a.activo { 
     border-bottom-color: var(--color-violeta-claro3); 
     color: var(--color-violeta-claro3); 
+    transform: translateY(-2px); 
 }
+
+/* /* ==========================================================================
+   FOOTER DELICADO Y PROLIJO (SIN ENLACES ACTIVOS)
+   ========================================================================== */
+
+/* ==========================================================================
+   PIE DE PÁGINA (FOOTER) SIMÉTRICO Y COMPLETO
+   ========================================================================== */
 
 footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* Alineación centrada igual que el header */
     flex-wrap: wrap; 
     gap: 2rem;
-    padding: 2.5rem 3rem;
-    background-color: var(--color-violeta-oscuro3); 
+    padding: 1rem 3rem; /* Margen interno idéntico al menú superior */
+    background-color: var(--color-violeta-oscuro3); /* Mismo fondo violeta */
     color: var(--color-violeta-claro1); 
     border-top: 3px solid var(--color-violeta-oscuro2); 
     margin-top: auto; 
+    box-shadow: 0 -4px 15px rgba(13, 11, 47, 0.2); /* Sombra invertida hacia arriba */
 }
 
 .footer-marca {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.4rem;
+    max-width: 450px;
 }
 
 .footer-marca span {
     font-family: var(--font-titulo);
-    font-size: 1.8rem;
-    font-weight: 700;
+    font-size: 2.2rem; /* Mismo tamaño que el h1 del menú */
     color: var(--color-violeta-claro1);
+    line-height: 1;
 }
 
-.footer-marca p {
+.footer-marca .lema {
     font-family: var(--font-texto);
+    font-style: italic;
     font-size: 0.95rem;
-    line-height: 1.5;
-    color: var(--color-violeta-claro2); 
+    line-height: 1.4;
+    color: var(--color-violeta-claro3);
 }
 
+.footer-marca .contacto-info {
+    font-family: var(--font-texto);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--color-violeta-claro2);
+}
 
 .footer-seccion {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
+    gap: 0.5rem;
 }
 
 .footer-seccion span {
     font-family: var(--font-texto);
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--color-violeta-claro3); 
-    margin-bottom: 0.2rem;
+    letter-spacing: 0.15rem; /* Ajustado al estilo del h2 del menú */
+    color: var(--color-violeta-claro2);
+}
+
+/* Fila horizontal con el mismo espaciado que la navegación superior */
+.redes-horizontales {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem; /* Mismo espacio elástico entre los links del menú */
+    align-items: center;
 }
 
 .footer-seccion a {
-    font-family: var(--font-texto);
-    font-size: 0.95rem;
-    color: var(--color-violeta-claro1);
     text-decoration: none;
-    transition: all 0.3s ease; 
+    color: var(--color-violeta-claro1); 
+    border-bottom: 3px solid transparent; /* Mismo borde oculto para la animación */
     display: inline-block;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+    padding: 0.4rem 0.2rem; 
+    cursor: pointer;
+}
+.footer-seccion a .fa-brands {
+    font-family: "Font Awesome 6 Brands" !important; 
+    font-style: normal;
+    font-weight: 400 !important; /* Font Awesome necesita este grosor específico para marcas */
 }
 
+/* Control del tamaño de los iconos de marcas */
+.footer-seccion a i {
+    font-size: 1.3rem; /* Tamaño proporcional para equilibrar la interfaz */
+    display: block;
+}
+
+/* Evita que el click vacío mueva o intente recargar el navegador */
+.footer-seccion a:active {
+    pointer-events: none;
+}
+
+/* Animación idéntica a la del menú superior */
 .footer-seccion a:hover {
-    color: var(--color-violeta-claro3); 
-    transform: translateX(5px); 
-}
-
-.pagina-contacto {
-    background-color: var(--color-violeta-claro1);
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.titulo-seccion {
-    color: var(--color-violeta-oscuro3);
-    margin-bottom: 40px;
-    font-size: 2.2rem;
-    text-transform: uppercase;
-}
-
-.contenedor-viñetas {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.viñeta-card {
-    background-color: #ffffff;
-    padding: 30px;
-    width: 280px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(13, 11, 47, 0.1); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid var(--color-violeta-claro2);
-}
-
-.viñeta-card:hover {
-    transform: translateY(-10px); 
-    box-shadow: 0 15px 35px rgba(47, 15, 112, 0.2);
-}
-
-.icono-circular {
-    font-size: 3rem;
-    margin-bottom: 15px;
-}
-
-.viñeta-card h3 {
-    color: var(--color-violeta-oscuro2);
-    margin-bottom: 10px;
-}
-
-.viñeta-card.alerta {
-    border: 2px solid var(--color-violeta-oscuro3);
-    background-color: #fffafb;
-}
-
-.enlaces-redes {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.enlaces-redes a {
-    color: var(--color-violeta-oscuro3);
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-
-
-.tabla table {  
-    width: 100%;
-    border-collapse: collapse;
-    background-color: var(--color-violeta-claro1); 
-    margin-top: 1rem;
-}
-
-.tabla th {
-    background-color: var(--color-violeta-claro3); /* Encabezado violeta suave */
-    color: var(--color-violeta-oscuro3);           /* Texto violeta oscuro */
-    font-weight: 800;
-    text-align: center;
-    padding: 10px 12px;
-    font-size: 1.1rem;
-}
-
-.tabla td {
-    padding: 1rem;
-    color: var(--color-violeta-oscuro2);
-    border-bottom: 1px dashed var(--color-violeta-oscuro3); 
-    font-size: 1.3rem;
-    text-align: center;
-}
-
-
-.tabla tr:hover {
-    background-color: var(--color-violeta-claro2);
-}
-
-.icono-marca {
-    width: 60px;        
-    height: 60px;        
-    object-fit: contain; 
-    align-self: center;  
-}
-
-.marca {
-    display: flex;
-    flex-direction: row; 
-    align-items: center; 
-    justify-content: flex-start;
-    gap: 15px;           
+    border-bottom-color: var(--color-violeta-claro3); 
+    color: var(--color-violeta-claro3); /* Cambia al violeta reactivo del menú */
+    transform: translateY(-2px); /* Pequeño salto flotante interactivo */
 }

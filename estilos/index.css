@@ -1,10 +1,11 @@
+
 main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
- /* Contenedor del inicio, de conocernos y ubicacion*/
+ /* Contenedor del inicio, de conodernos y ubicacion*/
 .hero, .contenedor-cono, .contenedor-ubi{
     display: flex;
     background-color: var(--color-violeta-claro1);
@@ -34,11 +35,9 @@ main{
 .texto-contenedor h2, .contenedor-cono h2 {
     color: var(--color-violeta-oscuro3);
     font-size: 3.5rem;
-    font-weight: 700;
-    line-height: 1.2;
+    font-weight: 700; /*  de 70 a 700 para que se vea en negrita */
+    line-height: 1.2;  /*  1.2 (un valor relativo sin unidad para que sea proporcional) */
     margin-top: 1rem;
-    font-family: var(--font-principal);
-    
 }
 
 .texto-contenedor p, .contenedor-cono p{
@@ -46,7 +45,6 @@ main{
     font-size: 1.6rem;
     font-weight: 440; 
     margin-block: 1rem;
-    font-family: var(--font-titulo2);
 }
 
 .boton-logo {
@@ -91,18 +89,17 @@ main{
   transform: translateX(30px); 
 }
 
-.servicios, .videos, .ubicacion, .profesionales{
+.servicios, .videos, .ubicacion{
     max-width: 1500px;
     margin: 0 auto;
 }
 
-.servicios h2, .videos h2, .ubicacion h2, .profesionales h2{
+.servicios h2, .videos h2, .ubicacion h2{
     text-align: center;
     color: var(--color-violeta-oscuro3);
     font-size: 2.2rem;
     margin-top: 50px;
     font-weight: 600;
-    font-family: var(--font-titulo2);
     
 }
 
@@ -132,7 +129,7 @@ main{
 }
 
 /*configuracion de los servicios y videos*/
-.contenedor-sevicios, .card-video, .equipo{
+.contenedor-sevicios, .card-video{
     display: flex;
     flex-wrap:wrap;
     gap: 3rem;
@@ -151,14 +148,13 @@ main{
 }
 
 /*letras de servicios y videos*/
-.card h3, .video h3, .ubicacion h3, .equipo h3{
+.card h3, .video h3, .ubicacion h3{
     margin: 0;
     font-size: 1.4rem;
     color: var(--color-violeta-oscuro2);
     font-weight: 600;
     line-height: 2rem;
     text-align: center;
-    font-family: var(--font-principal);
 }
 .card:hover{
     transform: translateY(-10px);
@@ -222,10 +218,11 @@ main{
 .texto-mapa p, .equipo p{ 
     color: var(--color-violeta-oscuro1);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 300;
     margin-block: 1rem;
-    font-family: var(--font-titulo2);
 }
+
+
 /* tabla*/
 .tabla table{
     width: auto;
@@ -240,7 +237,6 @@ main{
     text-align: center;
     padding: 10px 10px;
     font-size: 1.1rem;
-    font-family: var(--font-principal);
 }
 
 tr:hover {background-color: var(--color-violeta-claro2);}
@@ -250,5 +246,6 @@ tr:hover {background-color: var(--color-violeta-claro2);}
     color: var(--color-violeta-oscuro2);
     border-bottom: 1px dashed var(--color-violeta-oscuro3);
     font-size: 1.3rem;
-    font-family: var(--font-principal);
 }
+
+.texto-mapa, .tabla{flex: auto;}
