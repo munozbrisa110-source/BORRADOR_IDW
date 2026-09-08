@@ -23,7 +23,6 @@
 .autor-testimonio,
 .item-faq summary {
     font-family: var(--font-titulo2);
-    /* Montserrat */
     color: var(--color-violeta-oscuro3);
 }
 
