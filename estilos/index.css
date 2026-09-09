@@ -136,7 +136,10 @@ main{
     display: flex;
     flex-wrap:wrap;
     gap: 3rem;
+    justify-content: center;
+    gap: 3rem;
 }
+
 
  /*configuracion de las tarjetas*/
 .card{
