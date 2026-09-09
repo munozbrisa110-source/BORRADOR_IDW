@@ -1,11 +1,5 @@
 /* ESTILOS INSTITUCIONAL */
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
- 
+
 
 /* Fondo general de la página institucional */
 .pagina-institucional {
