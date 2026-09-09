@@ -209,6 +209,7 @@ main{
 /* Valores (interno) */
 .card-valor {
     flex: 1 1 250px;
+    max-width: 300px;
     padding: 30px 20px;
     text-align: center;
 }
@@ -238,6 +239,7 @@ main{
 .foto-galeria {
     margin: 0;
     flex: 1 1 300px;
+    max-width: 360px;
     overflow: hidden;
 }
 .foto-galeria img {
