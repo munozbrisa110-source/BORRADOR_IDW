@@ -14,8 +14,8 @@ main{
             var(--color-violeta-claro2));
     padding: 60px 4px;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    
+ 
 }
 
 /* Agrupación propiedades idénticas
@@ -64,9 +64,8 @@ main{
 .instalaciones,
 .testimonios,
 .preguntas-frecuentes {
-   width: 100%;
+    margin: 0 auto;
 }
-
 
 /* Fondos y sombras de tarjetas claras (valores e instalaciones) */
 .card-valor,
