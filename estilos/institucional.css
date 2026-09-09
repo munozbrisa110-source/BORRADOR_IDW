@@ -306,18 +306,3 @@
     margin: 12px 0 0 0;
     font-size: 15px;
 }
-
-@media (min-width: 1400px) {
-    .titulo-institucional,
-    .sobre-nosotros,
-    .valores,
-    .mision-vision,
-    .instalaciones,
-    .testimonios,
-    .preguntas-frecuentes {
-        max-width: 1200px;
-        width: 100%;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-}
