@@ -291,6 +291,7 @@
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     overflow: hidden;
+    width: 100%;
 }
 .item-faq summary {
     font-weight: 600;
