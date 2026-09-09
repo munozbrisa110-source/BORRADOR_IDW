@@ -7,7 +7,8 @@
     background: linear-gradient(135deg,
             var(--color-violeta-claro1),
             var(--color-violeta-claro2));
-    padding: 60px 20px;
+    padding: 60px 4px;
+    width: 100%;
 }
 
 /* Agrupación propiedades idénticas
