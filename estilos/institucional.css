@@ -1,13 +1,15 @@
-* ESTILOS INSTITUCIONAL */
+/* ESTILOS INSTITUCIONAL */
 
- 
 
 /* Fondo general de la página institucional */
 .pagina-institucional {
     background: linear-gradient(135deg,
             var(--color-violeta-claro1),
             var(--color-violeta-claro2));
-    padding: 60px 20px;
+    padding: 60px 4px;
+    width: 100%;
+    
+ 
 }
 
 /* Agrupación propiedades idénticas
@@ -46,7 +48,6 @@
 .texto-testimonio,
 .respuesta-faq p {
     font-family: var(--font-texto);
-    /* Roboto */
     color: #4a4a4a;
     line-height: 1.6;
 }
@@ -57,7 +58,6 @@
 .instalaciones,
 .testimonios,
 .preguntas-frecuentes {
-    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -116,7 +116,7 @@
     align-items: center;
     gap: 5%;
     max-width: 1350px;
-    width: 95%;
+    width: 100%;
     margin: 0 auto 75px;
     padding: 20px 0;
 }
@@ -204,7 +204,8 @@
 
 /* Valores (interno) */
 .card-valor {
-    width: 280px;
+    flex: 1 1 250px;
+    max-width: 300px;
     padding: 30px 20px;
     text-align: center;
 }
@@ -233,7 +234,8 @@
 }
 .foto-galeria {
     margin: 0;
-    width: 320px;
+    flex: 1 1 300px;
+    max-width: 360px;
     overflow: hidden;
 }
 .foto-galeria img {
@@ -254,7 +256,7 @@
     gap: 30px;
 }
 .card-testimonio {
-    width: 440px;
+    flex: 1 1 400px;
     padding: 15px;
     border-radius: 15px;
     border-top: 4px solid var(--color-violeta-claro3);
@@ -284,11 +286,13 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 100%;
 }
 .item-faq {
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     overflow: hidden;
+    width: 100%;
 }
 .item-faq summary {
     font-weight: 600;
@@ -306,18 +310,4 @@
 .respuesta-faq p {
     margin: 12px 0 0 0;
     font-size: 15px;
-}
-@media (min-width: 1400px) {
-    .titulo-institucional,
-    .sobre-nosotros,
-    .valores,
-    .mision-vision,
-    .instalaciones,
-    .testimonios,
-    .preguntas-frecuentes {
-        max-width: 1200px;
-        width: 100%;
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
 }
