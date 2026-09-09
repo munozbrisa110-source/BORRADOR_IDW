@@ -290,10 +290,3 @@ Institucional */
  height: 20px;
  vertical-align: middle;
 }
-/* Responsivo para móviles */
-@media (max-width: 768px) {
- .contacto-seccion-principal {
- flex-direction: column;
- text-align: center;
- }
-}
